@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
-class Animalstab extends StatefulWidget {
-  const Animalstab({super.key});
+class NumbersTab extends StatefulWidget {
+  const NumbersTab({super.key});
 
   @override
-  State<Animalstab> createState() => _AnimalstabState();
+  State<NumbersTab> createState() => _NumbersTabState();
 }
 
-class _AnimalstabState extends State<Animalstab> {
+class _NumbersTabState extends State<NumbersTab> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Row(),
+        Row(),
+        Row()
+      ],
+    );
   }
 }

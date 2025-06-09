@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
-class AnimalsTab extends StatefulWidget {
-  const AnimalsTab({super.key});
+class VowelsTab extends StatefulWidget {
+  const VowelsTab({super.key});
 
   @override
-  State<AnimalsTab> createState() => _AnimalsTabState();
+  State<VowelsTab> createState() => _VowelsTabState();
 }
 
-class _AnimalsTabState extends State<AnimalsTab> {
+class _VowelsTabState extends State<VowelsTab> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Row(),
+        Row(),
+        Row()
+      ],
+    );
   }
 }
