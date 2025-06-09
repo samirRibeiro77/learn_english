@@ -1,5 +1,5 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:learn_english/helper/media_helper.dart';
 
 class AnimalsTab extends StatefulWidget {
   const AnimalsTab({super.key});
@@ -9,11 +9,15 @@ class AnimalsTab extends StatefulWidget {
 }
 
 class _AnimalsTabState extends State<AnimalsTab> {
-  final _audioPlayer = AudioPlayer();
+  final _mediaHelper = MediaHelper();
 
-  _playAudio(String path){
-    var source = AssetSource("audios/$path.mp3");
-    _audioPlayer.play(source);
+  @override
+  void initState() {
+    super.initState();
+
+    _mediaHelper.cache = [
+      "cao", "gato", "leao", "macaco", "ovelha", "vaca",
+    ];
   }
 
   @override
@@ -23,27 +27,27 @@ class _AnimalsTabState extends State<AnimalsTab> {
       childAspectRatio: MediaQuery.of(context).size.aspectRatio * 2,
       children: [
         GestureDetector(
-          onTap: () => _playAudio("cao"),
+          onTap: () => _mediaHelper.playMp3("cao"),
           child: Image.asset("assets/images/cao.png"),
         ),
         GestureDetector(
-          onTap: () => _playAudio("gato"),
+          onTap: () => _mediaHelper.playMp3("gato"),
           child: Image.asset("assets/images/gato.png"),
         ),
         GestureDetector(
-          onTap: () => _playAudio("leao"),
+          onTap: () => _mediaHelper.playMp3("leao"),
           child: Image.asset("assets/images/leao.png"),
         ),
         GestureDetector(
-          onTap: () => _playAudio("macaco"),
+          onTap: () => _mediaHelper.playMp3("macaco"),
           child: Image.asset("assets/images/macaco.png"),
         ),
         GestureDetector(
-          onTap: () => _playAudio("ovelha"),
+          onTap: () => _mediaHelper.playMp3("ovelha"),
           child: Image.asset("assets/images/ovelha.png"),
         ),
         GestureDetector(
-          onTap: () => _playAudio("vaca"),
+          onTap: () => _mediaHelper.playMp3("vaca"),
           child: Image.asset("assets/images/vaca.png"),
         ),
       ],
