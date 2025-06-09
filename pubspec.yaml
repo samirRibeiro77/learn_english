@@ -33,13 +33,10 @@ flutter:
     - assets/images/5.png
     - assets/images/6.png
     - assets/images/cao.png
-    - assets/images/direitos.png
     - assets/images/gato.png
     - assets/images/leao.png
     - assets/images/macaco.png
     - assets/images/ovelha.png
-    - assets/images/segundo_fundo.jpg
-    - assets/images/segundo_fundo.png
     - assets/images/vaca.png
     # Audios
     - assets/audios/1.mp3

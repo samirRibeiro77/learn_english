@@ -34,10 +34,7 @@ class _HomePageState extends State<HomePage>
           indicatorColor: Colors.white,
           labelColor: Colors.white,
           unselectedLabelColor: Colors.white38,
-          labelStyle: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold
-          ),
+          labelStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           controller: _tabController,
           tabs: <Widget>[
             Tab(text: "Animals"),

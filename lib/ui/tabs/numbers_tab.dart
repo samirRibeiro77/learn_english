@@ -15,9 +15,7 @@ class _NumbersTabState extends State<NumbersTab> {
   void initState() {
     super.initState();
 
-    _mediaHelper.cache = [
-      "1", "2", "3", "4", "5", "6",
-    ];
+    _mediaHelper.cache = ["1", "2", "3", "4", "5", "6"];
   }
 
   @override

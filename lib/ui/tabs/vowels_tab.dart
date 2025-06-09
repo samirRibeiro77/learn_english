@@ -10,12 +10,17 @@ class VowelsTab extends StatefulWidget {
 class _VowelsTabState extends State<VowelsTab> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(),
-        Row(),
-        Row()
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircularProgressIndicator(),
+          Text(
+            "Still building this page...",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+        ],
+      ),
     );
   }
 }

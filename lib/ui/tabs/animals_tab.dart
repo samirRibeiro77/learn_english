@@ -24,7 +24,10 @@ class _AnimalsTabState extends State<AnimalsTab> {
   Widget build(BuildContext context) {
     return GridView.count(
       crossAxisCount: 2,
-      childAspectRatio: MediaQuery.of(context).size.aspectRatio * 2,
+      childAspectRatio: MediaQuery
+          .of(context)
+          .size
+          .aspectRatio * 2,
       children: [
         GestureDetector(
           onTap: () => _mediaHelper.playMp3("cao"),

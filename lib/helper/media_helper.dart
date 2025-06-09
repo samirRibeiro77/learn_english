@@ -21,7 +21,7 @@ class MediaHelper {
     _cache = AudioCache(prefix: "assets/audios/");
     List<String> filesCache = [];
 
-    for(var file in files) {
+    for (var file in files) {
       filesCache.add("$file.mp3");
     }
 
