@@ -40,6 +40,14 @@ class _HomePageState extends State<HomePage>
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(widget.title, style: TextStyle(color: Colors.white)),
         bottom: TabBar(
+          indicatorWeight: 4.0,
+          indicatorColor: Colors.white,
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.white38,
+          labelStyle: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold
+          ),
           controller: _tabController,
           tabs: <Widget>[
             Tab(text: "Animals"),
