@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learn_english/model/tab.dart';
 import 'package:learn_english/ui/tabs/animals_tab.dart';
 import 'package:learn_english/ui/tabs/numbers_tab.dart';
 import 'package:learn_english/ui/tabs/vowels_tab.dart';
@@ -16,15 +15,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   late final TabController _tabController;
-  final tabs = [
-    AppTab(0, "Animals", AnimalsTab()),
-    AppTab(1, "Numbers", NumbersTab()),
-    AppTab(2, "Vowels", VowelsTab()),
-  ];
-
-  test(){
-    // _tabController.
-  }
 
   @override
   void initState() {
